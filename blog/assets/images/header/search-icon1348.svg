@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>search-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Blog-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blog-main" transform="translate(-1101.000000, -100.000000)" fill="#BBBBBB">
+            <g id="menubar-copy" transform="translate(0.000000, 81.000000)">
+                <g id="Group-5" transform="translate(319.000000, 17.000000)">
+                    <g id="Search" transform="translate(782.000000, 2.000000)">
+                        <g id="search">
+                            <g id="search-icon">
+                                <path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,9.59121605 15.5354376,11.0739277 14.7345448,12.3199029 L18.8284271,16.4142136 C19.2189514,16.8047379 19.2189514,17.4379028 18.8284271,17.8284271 C18.4379028,18.2189514 17.8047379,18.2189514 17.4142136,17.8284271 L17.4142136,17.8284271 L13.4460786,13.860099 C12.0179749,15.1879088 10.1038245,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

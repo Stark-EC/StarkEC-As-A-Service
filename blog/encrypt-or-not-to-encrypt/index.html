@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from tresorit.com/blog/encrypt-or-not-to-encrypt/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 18:12:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" />
+  <title>To Encrypt or Not to Encrypt? That Is the Question</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+
+  <link rel="stylesheet" type="text/css" href="../assets/dist/main1348.css?v=74801ca68d" />
+
+  <script src="../assets/dist/abtest.bundle1348.js?v=74801ca68d"></script>
+
+  <meta name="description" content="There are several technical reasons why it is extremely difficult to accomplish exceptional governmental access, without insecuring the whole Internet.">
+    <link rel="icon" href="../content/images/size/w256h256/2020/12/Logo_RGB_600x600.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Tresorit Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="To Encrypt or Not to Encrypt? That Is the Question">
+    <meta property="og:description" content="There are several technical reasons why it is extremely difficult to accomplish exceptional governmental access, without insecuring the whole Internet.">
+    <meta property="og:url" content="https://tresorit.com/blog/encrypt-or-not-to-encrypt/">
+    <meta property="og:image" content="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png">
+    <meta property="article:published_time" content="2015-09-18T10:41:46.000Z">
+    <meta property="article:modified_time" content="2023-08-17T14:55:39.000Z">
+    <meta property="article:tag" content="privacy">
+    <meta property="article:tag" content="security">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="To Encrypt or Not to Encrypt? That Is the Question">
+    <meta name="twitter:description" content="There are several technical reasons why it is extremely difficult to accomplish exceptional governmental access, without insecuring the whole Internet.">
+    <meta name="twitter:url" content="https://tresorit.com/blog/encrypt-or-not-to-encrypt/">
+    <meta name="twitter:image" content="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="István Lám">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="privacy, security">
+    <meta name="twitter:site" content="@tryghost">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="380">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Tresorit Blog",
+        "url": "https://tresorit.com/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://static.ghost.org/v1.0.0/images/ghost-logo.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "István Lám",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://tresorit.com/blog/content/images/2023/05/istvan-lam.webp",
+            "width": 100,
+            "height": 100
+        },
+        "url": "https://tresorit.com/blog/author/cipka/",
+        "sameAs": []
+    },
+    "headline": "To Encrypt or Not to Encrypt? That Is the Question",
+    "url": "https://tresorit.com/blog/encrypt-or-not-to-encrypt/",
+    "datePublished": "2015-09-18T10:41:46.000Z",
+    "dateModified": "2023-08-17T14:55:39.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png",
+        "width": 600,
+        "height": 380
+    },
+    "keywords": "privacy, security",
+    "description": "Tresorit is the most secure file storage &amp; sharing service provider on the market, and as the CEO of Tresorit, I am a crypto-nerd. To me, privacy means that I can decide to keep my data private, and neither an NSA or government agent, nor a Facebook/Dropbox/Google employee can see what is in there, – if I don’t want it. This concept of privacy is not compatible with any kind of ‘doors’ – front, back or other access to user data.\n\n\nSince UK Prime Minister David Cameron suggested earlier this year",
+    "mainEntityOfPage": "https://tresorit.com/blog/encrypt-or-not-to-encrypt/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.82">
+    <link rel="alternate" type="application/rss+xml" title="Tresorit Blog" href="../rss/index.html">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="f5a8cd41673125ad4f0d6a85f8" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://tresorit.ghost.io/blog/" crossorigin="anonymous"></script>
+    
+    <link href="../webmentions/receive/index.html" rel="webmention">
+    <script defer src="../public/cards.min1348.js?v=74801ca68d"></script><style>:root {--ghost-accent-color: #15171A;}</style>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min1348.css?v=74801ca68d">
+</head>
+
+<body class="post-template tag-privacy tag-security tag-hash-import-2023-05-21-21-13 tag-hash-import-2023-08-13-23-42">
+  <div class="site-wrapper">
+    <header id="header" class="header">
+  <nav>
+    <div class="container">
+      <a href="../../index.html" class="navbar-brand navbar-brand--mobile">
+        <img src="../assets/images/header/logo1348.svg?v=74801ca68d" alt="Tresorit secure cloud storage" />
+      </a>
+      <div class="navigation-wrapper">
+        <a href="../../index.html" class="navbar-brand navbar-brand--desktop">
+          <img src="../assets/images/header/logo1348.svg?v=74801ca68d" alt="Tresorit secure cloud storage" />
+        </a>
+        <div class="selector">
+          <a href="https://web.tresorit.com/?from-website" target="_blank" rel="noopener noreferrer" class="selector-login" data-page-part="event_navigational_action" data-log-id="event_cta_click" data-page-id="cta_login-header_click" data-log-isp="CtaLoginHeaderClick">Log In</a>
+          <a class="btn bb header-cta selector-request-demo" href="../../request-a-demo" data-page-part="event_tresorit-plan_action" data-log-id="event_button_click" data-page-id="button_request-demo-header_click" target="_blank" rel="noopener noreferrer">Request a demo</a>
+        </div>
+        <div class="navbar-collapse" data-append="false">
+          <ul>
+            <li>
+              <a href="../../why-tresorit.html" data-log-id="event_header_click" data-log-isp="MenuWhyTresoritClick">Why Tresorit?</a>
+            </li>
+            <li class="dd">
+              <button class="styleless" data-log-id="event_header_click" data-log-isp="MenuProductsClick">
+                <span>Products</span>
+              </button>
+              <div class="dd-content">
+                <div class="box solutions">
+                  <ul>
+                    <li>
+                      <div class="icon icon-separator secure-cloud"></div>
+                      <a href="../../secure-cloud-storage.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-securecloud_click">
+                        <span>Tresorit SecureCloud</span>
+                        <span>Work together in an end-to-end encrypted workspace - anywhere, anytime</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="icon file-sharing"></div>
+                      <a href="../../secure-file-sharing" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-fileSharing_click">
+                        <span>
+                          <span>Tresorit FileSharing</span>
+                        </span>
+                        <span>Share files with permission control, revoke access anytime</span>
+                      </a>
+                    </li>
+                    <li data-separator="Add-ons">
+                      <div class="icon icon-separator esign"></div>
+                      <a href="../../esign" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-esign_click">
+                        <span>Tresorit eSign</span>
+                        <span>Get business done faster with our digital signature solution</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="icon email-encryption"></div>
+                      <a href="../../email-encryption-service" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-emailencryption_click">
+                        <span>
+                          <span>Tresorit EmailEncryption</span>
+                        </span>
+                        <span>Email security that protects against data loss and puts you in control</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li data-separator="Partnership & integration">
+                      <a href="../../tresorit-with-microsoft.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-with-microsoft_click">
+                        <span>Tresorit with Microsoft</span>
+                      </a>
+                    </li>
+                    <li class="last-child">
+                      <a href="../../tresorit-for-gmail.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-for-gmail_click">
+                        <span>Tresorit for Gmail</span>
+                      </a>
+                    </li>
+                    <li data-separator="Features">
+                      <a href="../../new-features.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-new-features_click">
+                        <span>New features</span>
+                      </a>
+                    </li>
+                    <li class="last-child" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-all-product-features_click">
+                      <a href="../../features.html">
+                        <span>All product features</span>
+                      </a>
+                    </li>
+                    <li data-separator="Basic solutions">
+                      <a href="../../pricing/basic.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-basic-tresorit-plan_click">
+                        <span>Basic Tresorit Plan</span>
+                        <span>Use the most essential Tresorit features for free</span>
+                      </a>
+                    </li>
+                    <li class="last-child">
+                      <a href="https://send.tresorit.com/" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_products-tresorit-send_click" target="_blank" rel="noopener noreferrer">
+                        <span>Tresorit Send</span>
+                        <span>Send confidential files securely</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dd">
+              <button class="styleless" data-log-id="event_header_click" data-log-isp="MenuSolutionsClick">
+                <span>Solutions</span>
+              </button>
+              <div class="dd-content">
+                <div class="box">
+                  <ul>
+                    <li data-separator="Use cases" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-enterprise_click">                      
+                      <a href="../../enterprise.html">
+                        <span>Business File Sharing & Storage</span>
+                        <span>Enable Secure File Sharing & Storage for your business</span>
+                      </a>
+                    </li>
+                    <li data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-client-data-room_click">                      
+                      <a href="../../client-data-room.html">
+                        <span>Client Data Room</span>
+                        <span>Collaborate efficiently & securely</span>
+                      </a>
+                    </li>
+                    <li data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-partner-data-room_click">                      
+                      <a href="../../partner-data-room.html">
+                        <span>Partner Data Room</span>
+                        <span>Collaborate & grow together</span>
+                      </a>
+                    </li>
+                    <li data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-individuals_click">                      
+                      <a href="../../individuals.html">
+                        <span>Personal Vault</span>
+                        <span>Safeguard your personal documents</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li data-separator="Industries" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-automotive_click">                      
+                      <a href="../../tisax.html">
+                        <span>Automotive</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../business/secure-collaboration-for-financial-services-institutions.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-finance_click">
+                        <span>Finance</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../business/hipaa-compliant-cloud-storage.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-healthcare_click">
+                        <span>Healthcare</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../business/tresorit-hr-toolkit.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-human-resources_click">
+                        <span>Human resources</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-cloud-services-for-lawyers.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-legal_click">
+                        <span>Legal</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../nonprofit.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-nonprofit_click">
+                        <span>Nonprofit</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li data-separator="Compliance">
+                      <a href="../tresorit-backs-privacy-for-all-to-strengthen-ccpa/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-ccpa_click">
+                        <span>CCPA</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../cjis-safeguard-criminal-justice-information-with-tresorit/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-cjis_click">
+                        <span>CJIS</span>
+                      </a>
+                    </li>             
+                    <li>
+                      <a href="../end-to-end-encryption-leads-to-security-in-securities/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-finra_click">
+                        <span>FINRA</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../gdpr" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-gdpr_click">
+                        <span>GDPR</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../business/hipaa-compliant-cloud-storage.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-hipaa_click">
+                        <span>HIPAA</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../defending-the-defense-industry/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-itar_click">
+                        <span>ITAR</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../from-safety-to-security-automotive-industry-doubles-down-on-data-protection/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_solutions-tisax_click">
+                        <span>TISAX</span>
+                      </a>
+                    </li>                    
+                  </ul>
+                </div>
+              </div>
+            </li>             
+            <li class="dd">
+              <button class="styleless" data-log-id="event_header_click" data-log-isp="MenuResourcesClick">
+                <span>Resources</span>
+              </button>
+              <div class="dd-content">
+                <div class="box">
+                  <ul>
+                    <li data-separator="Learn more">
+                      <a href="../index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-blog_click" target="_blank" rel="noopener noreferrer">
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../resources/customer-stories" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-customer-stories_click">
+                        <span>Customer Stories</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../webinar-event.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-webinar-event_click">
+                        <span>Events & Webinars</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../podcast.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-podcast_click">
+                        <span>Podcast</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../resources.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-resources-library_click">
+                        <span>Resource Library</span>
+                      </a>
+                    </li>
+                    <li data-separator="Support">
+                      <a href="../../download.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-download_click">
+                        <span>Download</span>
+                        <span>Tresorit apps and integrations for desktop and mobile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://support.tresorit.com/hc/en-us" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-knowledge-base_click" target="_blank" rel="noopener noreferrer">
+                        <span>Knowledge Base</span>
+                      </a>
+                    </li>                    
+                  </ul>
+                  <ul>
+                    <li data-separator="Compare">
+                      <a href="../../cloud-storage-comparison.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-full-comparison_click">
+                        <span>Full comparison</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-box-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-box_click">
+                        <span>Box</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../boxcryptor-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-boxcryptor_click">
+                        <span>Boxcryptor</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-dropbox-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-dropbox_click">
+                        <span>Dropbox</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-google-drive-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-google-drive_click">
+                        <span>Google Drive</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-nextcloud-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-nextcloud_click">
+                        <span>Nextcloud</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../secure-owncloud-alternative.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-ownCloud_click">
+                        <span>ownCloud</span>
+                      </a>
+                    </li>                    
+                  </ul>
+                  <ul>
+                    <li data-separator="Guidelines">
+                      <a href="../tresorit-to-offer-global-data-residency-options-for-businesses/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-dr_click">
+                        <span>Data Residency</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../security.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-ds_click">
+                        <span>Data Security</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../why-tresorit-is-committing-to-the-swiss-digital-trust-label/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-dtl_click">
+                        <span>Digital Trust Label</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../whistleblower-directive-clean-implementation-of-data-and-whistleblower-protection/index.html" data-page-part="event_navigation_action" data-log-id="event_menu_click" data-page-id="menu_resources-wa_click">
+                        <span>Whistleblower Act</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <a href="../../pricing" data-log-id="event_header_click" data-log-isp="MenuPricingClick">Pricing</a>
+            </li>            
+          </ul>
+        </div>
+        <div class="cta-container">
+          <a href="https://web.tresorit.com/?from-website" target="_blank" rel="noopener noreferrer" class="login" data-page-part="event_navigational_action" data-log-id="event_cta_click" data-page-id="cta_login-header_click" data-log-isp="CtaLoginHeaderClick">Log In</a>
+          <a class="btn bb header-cta request-demo" href="../../request-a-demo" data-page-part="event_tresorit-plan_action" data-log-id="event_button_click" data-page-id="button_request-demo-header_click" target="_blank" rel="noopener noreferrer">Request a demo</a>
+          <a class="btn header-cta try-for-free" href="../../pricing" data-page-part="event_tresorit-plan_action" data-log-id="event_button_click" data-page-id="button_start-free-trial-header_click">Try for free</a>
+        </div>
+      </div>
+      <div class="mobile-navigation">
+        <div class="cta-only-mobile-container">
+          <a class="btn header-cta" href="../../pricing" data-page-part="event_tresorit-plan_action" data-log-id="event_button_click" data-page-id="button_start-free-trial-header_click">Try for free</a>
+        </div>
+        <div class="navbar-toggle"><i></i></div>
+      </div>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+  <noscript>
+    <p class="noscript-msg">This page contains JavaScript. Please enable JavaScript in your browser to access all functions.</p>
+  </noscript>
+</header>
+    <section class="categories">
+    <ul class="nav">
+    <li class="nav-news"><a href="../tag/news/index.html">News</a></li>
+    <li class="nav-security"><a href="../tag/security/index.html">Security</a></li>
+    <li class="nav-compliance"><a href="../tag/compliance/index.html">Compliance</a></li>
+    <li class="nav-product"><a href="../tag/product/index.html">Product</a></li>
+    <li class="nav-company-announcements"><a href="../tag/company-announcements/index.html">Company Announcements</a></li>
+    <li class="nav-resources"><a href="../tag/resources/index.html">Resources</a></li>
+    <li class="nav-podcast"><a href="../tag/podcast/index.html">Podcast</a></li>
+</ul>
+
+
+  <div class="search-bar">
+    <form class="search-bar__form">
+      <button type="submit" class="search-bar__btn styleless">
+        <img src="../assets/images/header/search-icon1348.svg?v=74801ca68d" alt="" />
+      </button>
+      <input id="searchField" class="search-bar__input" />
+      <button class="search-bar__close-btn styleless"></button>
+    </form>
+  </div>
+</section>
+<section class="search-result">
+  <div class="container">
+    <p class="search-result__info"></p>
+    <div id="searchResultList" class="search-result__list"></div>
+  </div>
+</section>
+    <main class="site-main">
+      
+
+<article class="post post tag-privacy tag-security tag-hash-import-2023-05-21-21-13 tag-hash-import-2023-08-13-23-42 ">
+  <div class="container">
+    <header class="post__header">
+      <h1 class="post__title">To Encrypt or Not to Encrypt?</h1>
+      <section class="post__meta">
+        <span class="authors">By <a href="../author/cipka/index.html">István Lám</a>,&nbsp;</span>
+        <time class="date" datetime="2015-09-18">Sep 18, 2015</time>
+        <span class="tags">
+          <a href="../tag/privacy/index.html">privacy</a>
+        </span>
+      </section>
+    </header>
+  </div>
+
+  <div class="post__socials">
+    <a
+      href="https://www.linkedin.com/sharing/share-offsite/?url=https://tresorit.com/blog/encrypt-or-not-to-encrypt/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social social--linkedin"
+    >
+      <img src="../assets/images/post-card/linkedin1348.svg?v=74801ca68d" alt="Share on LinkedIn">
+    </a>
+    <a
+      href="https://twitter.com/intent/tweet?text=To%20Encrypt%20or%20Not%20to%20Encrypt?&amp;url=https://tresorit.com/blog/encrypt-or-not-to-encrypt/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social social--twitter"
+    >
+      <img src="../assets/images/post-card/twitter1348.svg?v=74801ca68d" alt="Share on Twitter">
+    </a>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://tresorit.com/blog/encrypt-or-not-to-encrypt/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social social--facebook"
+    >
+      <img src="../assets/images/post-card/facebook1348.svg?v=74801ca68d" alt="Share on Facebook">
+    </a>
+  </div>
+
+  <div class="post__featured-image-wrap">
+    <figure class="post__featured-image">
+      <picture>
+        <source
+          srcset="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 300w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 600w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 1000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 2000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 4000w"
+          sizes="100vw"
+          type="image/avif"
+        />
+        <source
+          srcset="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 300w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 600w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 1000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 2000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 4000w"
+          sizes="100vw"
+          type="image/webp"
+        />
+        <img
+          srcset="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 300w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 600w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 1000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 2000w,
+                  https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png 4000w"
+          sizes="100vw"
+          src="https://cdn.tresorit.com/blog/ghost-media/2015/09/encryption-debate_Tresorit_Istvan-Lam08-e1470944981334.png"
+          alt="To Encrypt or Not to Encrypt?"
+        />
+      </picture>
+    </figure>
+  </div>
+
+  <div class="post__content-outer">
+    <div class="container">
+      <section class="post__content">
+        <div class="post__content-inner">
+          <!--kg-card-begin: html--><p>Tresorit is the most secure file storage & sharing service provider on the market, and as the CEO of Tresorit, I am a crypto-nerd. To me, privacy means that I can decide to keep my data private, and neither an NSA or government agent, nor a Facebook/Dropbox/Google employee can see what is in there, &#8211; if I don’t want it. This concept of privacy is not compatible with any kind of ‘doors’ – front, back or other access to user data.<br /><br />
+Since UK Prime Minister David Cameron suggested <a href="https://www.pcworld.com/article/2868132/uk-prime-minister-suggests-banning-encrypted-apps-like-whatsapp-imessage.html?ref=tresorit.com" target="_blank" rel="noopener noreferrer">earlier this year</a> to ban encryption, policy debates intensified in the US, EU, UK and elsewhere about back- or frontdoors built into encryption systems. Certain parties argue that they need front- or backdoors to access tech companies’ data, to prevent and fight criminal activity. But both backdoors and frontdoors violate end user privacy and if that wouldn’t be enough reason against these doors, they also undermine the world’s overall cybersecurity. Let’s see why.</p>
+<h3><em>What are frontdoors and backdoors? </em></h3>
+<p>First, let’s get two expressions straight: what is a backdoor and what is a frontdoor.<br /><br />
+A <em>backdoor</em> is a covert way to provide an entity with a higher level access to a system than what  it should normally have. A backdoor is usually hidden as random security bug, but instead of being an accidental mistake, it is planted intentionally. The key thing is that backdoor is hidden, even from the system operator, which makes them uncontrollable and hence, dangerous. Someone who is not supposed to do so, can exploit them.<br /><br />
+A frontdoor is a way to give higher access to a system, but it in a way that it is known to the participants or at least by the system operator. It is also assured, that only that entity can use the frontdoor. This is like a master key in a hotel for the maid.<br /><br />
+Snowden uncovered several secret operations of the NSA, and that started the current debate on encryption backdoors and frontdoors. NSA director Michael S. Rogers is argues for “<a href="http://www.extremetech.com/extreme/203275-the-nsa-wants-front-door-access-to-your-encrypted-data?ref=tresorit.com" target="_blank" rel="noopener noreferrer">front doors with a big lock</a>”, meaning that in case of an investigation, the FBI or other authorities should have a legal and technical way, to access encrypted content. Washington Post created a graphic about the proposal – basically, White House is considering two platforms, one where the authorities can recover encrypted data using a key escrow, and another, where the recovery key is split between platform vendor and the authority. In my view, neither of the proposed options provides sufficient solution. Especially, that they do not guarantee non-US citizens, that they are not monitored by (for them) a foreign government.<br /><br />
+If you are new to the security industry, this debate might sound new, but the NSA has a long track record: Der Spiegel reported in 1996 that a swiss national pride, <em>Crypto AG</em> placed backdoors in their renowned crypto machines, due to <a href="https://www.spiegel.de/spiegel/print/d-9088423.html?ref=tresorit.com" target="_blank" rel="noopener noreferrer">pressure from the NSA</a>. Another, more recent example is the SP <em>800-90A standard proposal</em>: researchers suspected that the NSA might have included a backdoor in one of the newly standardized pseudo random generator (namely, Dual_EC-DRBG) . This backdoor could’ve enabled the NSA to monitor anybody, regardless of their citizenship or if they are using a strong encryption algorithm or not.<br /><br />
+Also, we should not forget to mention the Gemalto <a href="https://firstlook.org/theintercept/2015/02/19/great-sim-heist/?ref=tresorit.com" target="_blank" rel="noopener noreferrer">SIM encryption key database hack</a>: a joint effort by the NSA and the British GCHQ. To understand why this action is controversial, we need to understand how the GSM (and 4G/3G) network works. The SIM card stores a symmetric encryption key, which is used to encrypt the traffic in the air. Due to the nature of symmetric ciphers, the same key need to be used to decrypt the content by the GSM core network. For that reason, the SIM keys are stored in a secure, central database, called Home Location Register, or <a href="https://en.wikipedia.org/wiki/Network_switching_subsystem?ref=tresorit.com#Home_location_register_.28HLR.29" target="_blank" rel="noopener noreferrer">HLR</a>. HLRs are under the jurisdiction of the geolocal authority. That means, the NSA already had a sort of control over the domestic encryption keys, as a default. But then why did they need to hack a respected vendor? Because it enabled them to get any user’s data, without leaving a single mark. The former was actually admitted by General Keith Alexander in his keynote speech at Black Hat conference in 2013, while he denied any covert <a href="https://www.nsa.gov/public_info/_files/speeches_testimonies/transcript_of_gen_alexanders_black_hat_speech_31_july_2013.pdf?ref=tresorit.com" target="_blank" rel="noopener noreferrer">domestic content monitoring</a>.<br /><br />
+These things all undermine the credibility of intelligence agencies, and in general, triggers sometime unfounded suspicion. Not all secret operations are necessarily evil: after DES was introduced by IBM in the early 1970s, which later became the predominant block cipher in the industry, NSA tweaked its structure. NSA lowered the key size, and changed the deep structure (the S-boxes) of it without explanation. Many believed that NSA planted some backdoors, but it turned out later, that the change actually increased the <a href="https://gcn.com/articles/2011/02/16/rsa-11-nsa--no-des-backdoor.aspx?ref=tresorit.com" target="_blank" rel="noopener noreferrer">security of DES</a>: NSA already discovered possible attacks, and prepared against it.<br /><br />
+All in all, backdoors in crypto systems are not recent inventions, we have seen several suspicious activities by government agencies throughout the past decades. Let me explain why backdoors and frontdoors are bad.<br />
+&nbsp;</p>
+<h2>Why backdoors and frontdoors are bad? <em>– the objective technical reasons</em></h2>
+<p>It’s not only ethical, philosophical and political problems that are involved with backdoors and frontdoors. There are also several technical reasons why it is extremely difficult to accomplish exceptional governmental access, without insecuring the whole Internet. A recent MIT report by respected security scientists mentions quite a few challenges that a general governmental “frontdoor” would have to face. They state that introducing any frontdoors to encryption systems in rush could lead to a disaster without proper specification and proper system design.<br /><br />
+Our world increasingly relies on a trustworthy connection through the internet: individuals and business are banking online, companies transfer crucial business data through this network, governments communicate with their citizens online and so on. Due to this high economic dependence, we need to protect whatever goes through. The Internet could become so widespread, because it adapted to the arising security challenges step by step. Frontdoors and backdoors would undermine its security and would zero the work has been done so far.<br /><br />
+There are 4 main technical issues with backdoors and frontdoors:</p>
+<ol>
+<li><em>New protocols</em>: The installation of frontdoors & backdoors requires complete new security protocols, new research and development</li>
+<li><em>Non-immune governmental agencies</em>: Government agencies are not immune to attacks. Imagine the risk of a terrorist hacking a government agency and gaining access to all data about the US population.</li>
+<li><em>National governments versus global citizens: </em>In our globalized world, who would decide which government has the frontdoor?</li>
+<li><em>High costs and uncertain results: </em>A system that provides governmental frontdoors is complex and expensive. Who will take the bill of that cost?</li>
+</ol>
+<p><strong>New protocols:</strong><br /><br />
+The installation of frontdoors & backdoors requires complete new security protocols, new research and development. The current security systems have been designed in a way that there is no exceptional access in the system. And more or less, they have been functioning OK so far. Forward secrecy is a good example: without this solution if any time in the future any party is compromised, all traffic could be decrypted. Current security protocols are not the best, but with backdoors, most of the accomplishments, like forward security, would be ruined. Also, a new protocol that includes frontdoors needs to be analyzed thoroughly before implementation &#8211; it may take years. We’ve seen that most ad-hoc, non-analyzed protocols were cracked later on, just remember WEP, the Wi-Fi encryption.<br /><br />
+<strong>Non-immune governmental agencies:</strong><br /><br />
+The assumption that a governmental agency is unhackable or not vulnerable is naïve, and proven to be wrong. Its employees are humans too: they can quit, gossip, can be bribed or worse. Just think about Snowden: he walked away with a bunch of classified information. A few years ago, John Anthony Walker, a US officer was convicted of spying for the Soviet Union for almost 20 years: between <a href="https://en.wikipedia.org/wiki/John_Anthony_Walker?ref=tresorit.com" target="_blank" rel="noopener noreferrer">1968 and 1985</a>. No organization is unhackable: embarrassingly, even Hacking Team, a government supplier of surveillance and tracking software was <a href="https://www.wired.co.uk/article/hacking-team-spyware-company-hacked?ref=tresorit.com" target="_blank" rel="noopener noreferrer">hacked in 2015</a>. Damages can be major: in the recent breach of the US Office of Personnel Management, 21.5M social security numbers of government personnel <a href="https://thenextweb.com/insider/2015/07/09/21-5-million-social-security-numbers-affected-in-federal-data-breach-says-us-government/?ref=tresorit.com" target="_blank" rel="noopener noreferrer">were leaked</a>. If some organization had a frontdoor to all the communication over the internet, a breach would mean a breach of the entire Internet &#8211; a breach nobody saw before.<br /><br />
+<strong>National governments versus global citizens: </strong><br /><br />
+In our globalized world, who would decide which government has access to users’ data? Or is this only a privilege of the NSA? If the NSA has access to users’ data, wouldn’t China or Russia have the right to claim the same?  If you are a US citizen , who is working on a project in Europe, should the European government has access to all your personal data? And what if you are working in China or Russia? And what if you are not just in Europe for a short project, you are actually living there as an expat? If you say no to any of those questions, then why should US government have right to access to any foreign citizen’s data? I know these are provocative questions. But in our globalized world, people are working, buying and living in multiple countries. International trading could be completely killed by introducing frontdoor requirements on country level: a US company with factories in Pakistan, suppliers in China and retailers in the EU would have to trust all those governments, because if backdoors and frontdoors were implanted, they would all have the rights to access their confidential business data.<br /><br />
+<strong>High costs and uncertain results: </strong><br /><br />
+Digital Right Management (DRM) systems are good examples for how a key management at a global scale can go wrong. Hollywood and the publishing industry has been trying to introduce a proper Digital Right Management platform to prevent piracy, without a breakthrough yet. The similarities between DRM and the frontdoors are the following:</p>
+<ul>
+<li>Both require complex cryptographic key management, as the content in DRM is encrypted or at least scrambled a bit.</li>
+<li>Key management needs to have a global scale, without any exception: if a title is published without DRM in a small number, it can make pirates to copy and distribute that exception.</li>
+<li>The key management is actually implemented by vendors, who are not having interest to make it right; e.g. a DVD player vendor is not incentivized by properly protecting the DRM key. At the same time, those vendors are under serious competitive cost pressure.</li>
+</ul>
+<p>&nbsp;<br />
+Despite the billions of dollars and many years of research, all DRM systems has been cracked so far, just <a href="https://dvd-copy.blogspot.hu/2005/08/dvd-content-scrambling-system.html?ref=tresorit.com" target="_blank" rel="noopener noreferrer">think about DVD</a>: pirates have found the weaknesses and the way around. In case of any frontdoor technique the stakes are much-much higher, so it would be really motivating to many criminal hackers. We also have less experience to defend these systems than in case of DRM, so any leak can be disastrous to <em>all </em>industries, not just “some” revenue loss for the publishing industry.</p>
+<h2>Conclusion &#8211; Encrypt!</h2>
+<p>So the answer to the question in the title is “yes, let’s encrypt”. I think encryption is crucial from multiple perspectives: security is important for the Internet ecosystem, and weakening that security can be a complete backfire for our freedom, economy and personal security. Also, any backdoor and frontdoor plans raise political, philosophical and ethical questions which leads to a debate, that I think no one wants to take on. Legislative authorities try to address to these new issues, but if different countries take a different direction to this, it will undermine the potential growth of the global economy and the Internet ecosystem.</p>
+<!--kg-card-end: html-->
+        </div>
+      </section>
+    </div>
+  </div>
+</article>
+
+<section class="author-list">
+  <div class="container">
+    <ul>
+      <li class="author">
+        <div class="author__avatar">
+          <img src="../content/images/size/w100/2023/05/istvan-lam.webp" alt="István Lám" />
+        </div>
+        <div class="author__info">
+          <p class="author__info__name">István Lám</p>
+          <a href="../author/cipka/index.html">View more articles</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <div class="container">
+    <h2 class="recent-posts__title">Suggested Articles</h2>
+    <div class="recent-posts__list">
+          <article
+  class="post-card post tag-compliance tag-hash-import-2023-05-21-21-13 tag-hash-import-2023-08-13-23-42">
+
+  <a href="../financial-stability-with-security/index.html">
+    <div class="post-card__image-wrap">
+
+      <picture>
+        <source
+          srcset="/blog/content/images/size/w300/format/avif/2021/09/KwG-Bafin_Tresorit.png 300w,
+                  /blog/content/images/size/w600/format/avif/2021/09/KwG-Bafin_Tresorit.png 600w,
+                  /blog/content/images/size/w1000/format/avif/2021/09/KwG-Bafin_Tresorit.png 1000w,
+                  /blog/content/images/size/w2000/format/avif/2021/09/KwG-Bafin_Tresorit.png 2000w,
+                  /blog/content/images/size/w4000/format/avif/2021/09/KwG-Bafin_Tresorit.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/avif"
+        />
+        <source
+          srcset="/blog/content/images/size/w300/format/webp/2021/09/KwG-Bafin_Tresorit.png 300w,
+                  /blog/content/images/size/w600/format/webp/2021/09/KwG-Bafin_Tresorit.png 600w,
+                  /blog/content/images/size/w1000/format/webp/2021/09/KwG-Bafin_Tresorit.png 1000w,
+                  /blog/content/images/size/w2000/format/webp/2021/09/KwG-Bafin_Tresorit.png 2000w,
+                  /blog/content/images/size/w4000/format/webp/2021/09/KwG-Bafin_Tresorit.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/webp"
+        />
+        <img
+          class="post-card__image"
+          srcset="/blog/content/images/size/w300/2021/09/KwG-Bafin_Tresorit.png 300w,
+                  /blog/content/images/size/w600/2021/09/KwG-Bafin_Tresorit.png 600w,
+                  /blog/content/images/size/w1000/2021/09/KwG-Bafin_Tresorit.png 1000w,
+                  /blog/content/images/size/w2000/2021/09/KwG-Bafin_Tresorit.png 2000w,
+                  /blog/content/images/size/w4000/2021/09/KwG-Bafin_Tresorit.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          src="../content/images/size/w2000/2021/09/KwG-Bafin_Tresorit.png"
+          alt="KWG and BaFin: Ensuring financial stability with security"
+          loading="lazy"
+        />
+      </picture>
+
+    </div>
+  </a>
+
+  <div class="post-card__content">
+    <a class="post-card__header-link" href="../financial-stability-with-security/index.html">
+      <header class="post-card__header">
+        <div class="post-card__primary-tag">compliance</div>
+        <h3 class="post-card__title">KWG and BaFin: Ensuring financial stability with security</h3>
+      </header>
+    </a>
+
+    <footer class="post-card__footer">
+      <div class="post-card__meta">
+        <span class="author">
+          By <a href="../author/tresorit-team/index.html">Tresorit Team</a>,&nbsp;
+        </span>
+        <time datetime="2024-05-05">May 05, 2024</time>
+      </div>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https://tresorit.com/blog/financial-stability-with-security/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--linkedin"
+        >
+          <img src="../assets/images/post-card/linkedin1348.svg?v=74801ca68d" alt="Share on LinkedIn">
+        </a>
+        <a
+          href="https://twitter.com/intent/tweet?text=KWG%20and%20BaFin:%20Ensuring%20financial%20stability%20with%20security&amp;url=https://tresorit.com/blog/financial-stability-with-security/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--twitter"
+        >
+          <img src="../assets/images/post-card/twitter1348.svg?v=74801ca68d" alt="Share on Twitter">
+        </a>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://tresorit.com/blog/financial-stability-with-security/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--facebook"
+        >
+          <img src="../assets/images/post-card/facebook1348.svg?v=74801ca68d" alt="Share on Facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+</article>
+          <article
+  class="post-card post tag-compliance tag-hash-import-2023-05-21-21-13 tag-hash-import-2023-08-13-23-42">
+
+  <a href="../end-to-end-encryption-leads-to-security-in-securities/index.html">
+    <div class="post-card__image-wrap">
+
+      <picture>
+        <source
+          srcset="/blog/content/images/size/w300/format/avif/2021/03/FINRA@2x.png 300w,
+                  /blog/content/images/size/w600/format/avif/2021/03/FINRA@2x.png 600w,
+                  /blog/content/images/size/w1000/format/avif/2021/03/FINRA@2x.png 1000w,
+                  /blog/content/images/size/w2000/format/avif/2021/03/FINRA@2x.png 2000w,
+                  /blog/content/images/size/w4000/format/avif/2021/03/FINRA@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/avif"
+        />
+        <source
+          srcset="/blog/content/images/size/w300/format/webp/2021/03/FINRA@2x.png 300w,
+                  /blog/content/images/size/w600/format/webp/2021/03/FINRA@2x.png 600w,
+                  /blog/content/images/size/w1000/format/webp/2021/03/FINRA@2x.png 1000w,
+                  /blog/content/images/size/w2000/format/webp/2021/03/FINRA@2x.png 2000w,
+                  /blog/content/images/size/w4000/format/webp/2021/03/FINRA@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/webp"
+        />
+        <img
+          class="post-card__image"
+          srcset="/blog/content/images/size/w300/2021/03/FINRA@2x.png 300w,
+                  /blog/content/images/size/w600/2021/03/FINRA@2x.png 600w,
+                  /blog/content/images/size/w1000/2021/03/FINRA@2x.png 1000w,
+                  /blog/content/images/size/w2000/2021/03/FINRA@2x.png 2000w,
+                  /blog/content/images/size/w4000/2021/03/FINRA@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          src="../content/images/size/w2000/2021/03/FINRA%402x.png"
+          alt="FINRA: End-to-end encryption leads to security in securities"
+          loading="lazy"
+        />
+      </picture>
+
+    </div>
+  </a>
+
+  <div class="post-card__content">
+    <a class="post-card__header-link" href="../end-to-end-encryption-leads-to-security-in-securities/index.html">
+      <header class="post-card__header">
+        <div class="post-card__primary-tag">compliance</div>
+        <h3 class="post-card__title">FINRA: End-to-end encryption leads to security in securities</h3>
+      </header>
+    </a>
+
+    <footer class="post-card__footer">
+      <div class="post-card__meta">
+        <span class="author">
+          By <a href="../author/tresorit-team/index.html">Tresorit Team</a>,&nbsp;
+        </span>
+        <time datetime="2024-05-05">May 05, 2024</time>
+      </div>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https://tresorit.com/blog/end-to-end-encryption-leads-to-security-in-securities/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--linkedin"
+        >
+          <img src="../assets/images/post-card/linkedin1348.svg?v=74801ca68d" alt="Share on LinkedIn">
+        </a>
+        <a
+          href="https://twitter.com/intent/tweet?text=FINRA:%20End-to-end%20encryption%20leads%20to%20security%20in%20securities&amp;url=https://tresorit.com/blog/end-to-end-encryption-leads-to-security-in-securities/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--twitter"
+        >
+          <img src="../assets/images/post-card/twitter1348.svg?v=74801ca68d" alt="Share on Twitter">
+        </a>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://tresorit.com/blog/end-to-end-encryption-leads-to-security-in-securities/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--facebook"
+        >
+          <img src="../assets/images/post-card/facebook1348.svg?v=74801ca68d" alt="Share on Facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+</article>
+          <article
+  class="post-card post tag-esignature tag-collaboration tag-compliance featured">
+
+  <a href="../what-is-a-qualified-electronic-signature-qes-meaning-benefits-and-use-cases/index.html">
+    <div class="post-card__image-wrap">
+
+      <picture>
+        <source
+          srcset="/blog/content/images/size/w300/format/avif/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 300w,
+                  /blog/content/images/size/w600/format/avif/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 600w,
+                  /blog/content/images/size/w1000/format/avif/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 1000w,
+                  /blog/content/images/size/w2000/format/avif/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 2000w,
+                  /blog/content/images/size/w4000/format/avif/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/avif"
+        />
+        <source
+          srcset="/blog/content/images/size/w300/format/webp/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 300w,
+                  /blog/content/images/size/w600/format/webp/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 600w,
+                  /blog/content/images/size/w1000/format/webp/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 1000w,
+                  /blog/content/images/size/w2000/format/webp/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 2000w,
+                  /blog/content/images/size/w4000/format/webp/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          type="image/webp"
+        />
+        <img
+          class="post-card__image"
+          srcset="/blog/content/images/size/w300/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 300w,
+                  /blog/content/images/size/w600/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 600w,
+                  /blog/content/images/size/w1000/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 1000w,
+                  /blog/content/images/size/w2000/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 2000w,
+                  /blog/content/images/size/w4000/2024/04/EU_QeS_blogcover_withoutlogo@2x.png 4000w"
+          sizes="(min-width: 1300px) 1160px, (min-width: 1050px) 100vw, (min-width: 650px) 50vw, 100vw"
+          src="../content/images/size/w2000/2024/04/EU_QeS_blogcover_withoutlogo%402x.png"
+          alt="What is a qualified electronic signature (QES)? Meaning, benefits, and use cases"
+          loading="lazy"
+        />
+      </picture>
+
+    </div>
+  </a>
+
+  <div class="post-card__content">
+    <a class="post-card__header-link" href="../what-is-a-qualified-electronic-signature-qes-meaning-benefits-and-use-cases/index.html">
+      <header class="post-card__header">
+        <div class="post-card__primary-tag">esignature</div>
+        <h3 class="post-card__title">What is a qualified electronic signature (QES)? Meaning, benefits, and use cases</h3>
+      </header>
+    </a>
+
+    <footer class="post-card__footer">
+      <div class="post-card__meta">
+        <span class="author">
+          By <a href="../author/tresorit-team/index.html">Tresorit Team</a>,&nbsp;
+        </span>
+        <time datetime="2024-04-25">Apr 25, 2024</time>
+      </div>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https://tresorit.com/blog/what-is-a-qualified-electronic-signature-qes-meaning-benefits-and-use-cases/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--linkedin"
+        >
+          <img src="../assets/images/post-card/linkedin1348.svg?v=74801ca68d" alt="Share on LinkedIn">
+        </a>
+        <a
+          href="https://twitter.com/intent/tweet?text=What%20is%20a%20qualified%20electronic%20signature%20(QES)?%20Meaning,%20benefits,%20and%20use%20cases&amp;url=https://tresorit.com/blog/what-is-a-qualified-electronic-signature-qes-meaning-benefits-and-use-cases/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--twitter"
+        >
+          <img src="../assets/images/post-card/twitter1348.svg?v=74801ca68d" alt="Share on Twitter">
+        </a>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://tresorit.com/blog/what-is-a-qualified-electronic-signature-qes-meaning-benefits-and-use-cases/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social social--facebook"
+        >
+          <img src="../assets/images/post-card/facebook1348.svg?v=74801ca68d" alt="Share on Facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+
+    <footer id="footer">
+  <div class="container-wide">
+    <div class="footer-body">
+      <div class="cellContainer">
+        <div class="cell">
+          <div class="dd">
+            <p class="title">Product</p>
+            <ul>
+              <li><a href="../../security.html">Security</a></li>
+              <li><a href="../../resources/customer-stories">Customer stories</a></li>
+              <li><a href="../../pricing">Pricing</a></li>
+              <li><a href="../../download.html">Download Tresorit</a></li>
+              <li><a href="../../nonprofit.html">For nonprofits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dd">
+            <p class="title">Comparison</p>
+            <ul>
+              <li><a href="../../secure-google-drive-alternative.html">Google Drive</a></li>
+              <li><a href="../../secure-dropbox-alternative.html">Dropbox</a></li>
+              <li><a href="../../egnyte-alternative.html">Egnyte</a></li>
+              <li><a href="../../secure-box-alternative.html">Box</a></li>
+              <li><a href="../../boxcryptor-alternative.html">Boxcryptor</a></li>
+              <li><a href="../../secure-nextcloud-alternative.html">Nextcloud</a></li>
+              <li><a href="../../secure-owncloud-alternative.html">ownCloud</a></li>
+              <li><a href="../../cloud-storage-comparison.html">Other services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dd">
+            <p class="title">Help</p>
+            <ul>
+              <li><a href="https://support.tresorit.com/hc/en-us">Knowledge Base</a></li>
+              <li><a href="../../resources.html">Resources</a></li>
+              <li><a href="../index.html">Blog</a></li>
+              <li><a href="https://support.tresorit.com/hc/en-us/articles/216113777-What-is-Tresorit">FAQ</a></li>
+              <li><a href="https://status.tresorit.com/" target="_blank" rel="noopener noreferrer">Service Status</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dd">
+            <p class="title">Our company</p>
+            <ul>
+              <li><a href="../../about-us">About us</a></li>
+              <li><a href="../../contact.html">Contact us & Imprint</a></li>
+              <li><a href="https://tresorit.integrityline.app/?lang=en" target="_blank" rel="noopener noreferrer">Whistleblowing</a></li>
+              <li><a href="../../podcast.html">Podcast</a></li>
+              <li><a href="../../careers.html">Careers</a></li>
+              <li><a href="../../press.html">Press</a></li>
+              <li><a href="../../webinar-event.html">Webinars & Events</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dd">
+            <p class="title">Follow us</p>
+            <ul>
+              <li><a href="https://www.facebook.com/tresorit" target="_blank" rel="noopener noreferrer" class="social fb" data-page-part="social-link" data-log-id="bottom-click-facebook">Facebook</a></li>
+              <li><a href="https://twitter.com/Tresorit" target="_blank" rel="noopener noreferrer" class="social tw" data-page-part="social-link" data-log-id="bottom-click-twitter">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/tresorit" target="_blank" rel="noopener noreferrer" class="social in" data-page-part="social-link" data-log-id="bottom-click-linkedin">LinkedIn</a></li>
+              <li><a href="https://reddit.com/r/tresorit" target="_blank" rel="noopener noreferrer" class="social re" data-page-part="social-link" data-log-id="bottom-click-reddit">Reddit</a></li>
+              <li><a href="https://www.youtube.com/user/tresorit" target="_blank" rel="noopener noreferrer" class="social re" data-page-part="social-link" data-log-id="bottom-click-youtube">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cell footer-images-container">
+          <div class="dd">
+            <div class="footer-images" data-event-category="event_navigation_action">
+              <div>
+                <a aria-label="G2 Crowd user reviews" href="https://www.g2.com/products/tresorit/reviews?utf8=%E2%9C%93&amp;filters%5Bcomment_answer_values%5D=&amp;order=most_helpful" target="_blank" rel="noopener noreferrer" data-event-action="event_button_click" data-event-label="button_outbound-g2_click">
+                  <img src="../assets/images/footer/g2-spring-20231348.svg?v=74801ca68d" width="70" alt="G2 Crowd user reviews" />
+                </a>
+              </div>
+              <div>
+                <a aria-label="Capterra Shortlist" class="capterra-shortlist" href="https://www.capterra.com/p/150689/Tresorit/" target="_blank" rel="noopener noreferrer" data-event-action="event_button_click" data-event-label="button_outbound-capterra-shortlist_click">
+                  <img src="../assets/images/footer/capterra-shortlist-2022%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/capterra-shortlist-2022@2x.png?v=74801ca68d 2x" width="70" alt="Capterra Shortlist 2022" />
+                </a>
+              </div>
+              <div>
+                <a aria-label="Software Advice FrontRunners" class="sa-frontrunners" href="https://www.softwareadvice.com/file-sharing/tresorit-profile/" target="_blank" rel="noopener noreferrer" data-event-action="event_button_click" data-event-label="button_outbound-sa-frontrunners_click">
+                  <img src="../assets/images/footer/software-advice-frontrunners%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/software-advice-frontrunners@2x.png?v=74801ca68d 2x" width="70" alt="Software Advice FrontRunners" />
+                </a>
+              </div>
+              <div>
+                <a aria-label="Gartner Peer Insights Customers' Choice 2022" class="sa-frontrunners" href="../tresorit-named-2022-gartner-peer-insights-customers-choice-for-the-second-year-in-a-row/index62ac.html?utm_source=sp&amp;utm_medium=referral&amp;utm_campaign=gartner_2022_pr" target="_blank" rel="noopener noreferrer" data-event-action="event_button_click" data-event-label="button_outbound-gartner_click">
+                  <img src="../assets/images/footer/gartner-peer-2022%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/gartner-peer-2022@2x.png?v=74801ca68d 2x" width="70" alt="Gartner Peer Insights Customers' Choice 2022" />
+                </a>
+              </div>
+              <div>
+                <img src="../assets/images/footer/global_infosec_awards%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/global_infosec_awards@2x.png?v=74801ca68d 2x" width="70" alt="Global Infosec Awards" />
+              </div>
+              <div>
+                <a aria-label="GetApp user reviews" href="https://www.getapp.com/collaboration-software/a/tresorit/" target="_blank" rel="noopener noreferrer" data-event-action="event_button_click" data-event-label="button_outbound-getapp_click">
+                  <img src="../assets/images/footer/getapp%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/getapp@2x.png?v=74801ca68d 2x" width="70" alt="GetApp user reviews" />
+                </a>
+              </div>
+              <div>
+                <img src="../assets/images/footer/deloitte50%401x1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/deloitte50@2x.png?v=74801ca68d 2x" width="140" alt="Deloitte Technology Fast 50 Central Europe 2022" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="langs clearfix">
+        <li><img src="../assets/images/footer/language-icon1348.png?v=74801ca68d" srcset="https://tresorit.com/blog/assets/images/footer/language-icon@2x.png?v=74801ca68d 2x" alt="Language icon" loading="lazy"></li>
+        <li><a href="../index.html" class="en">ENGLISH</a></li>
+        <li><a href="../de/index.html" class="de">DEUTSCH</a></li>
+      </ul>
+      <p class="copyright">Copyright © <span class="year-placeholder"></span> Tresorit. All rights reserved.</p>
+      <ul class="links">
+        <li><a href="../../legal" target="_blank">Terms</a></li>
+        <li><a href="../../legal/privacy-policy.html" target="_blank">Privacy</a></li>
+        <li><a href="../../cookie-policy.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="../assets/dist/main.bundle1348.js?v=74801ca68d"></script>
+  
+  
+</body>
+
+
+<!-- Mirrored from tresorit.com/blog/encrypt-or-not-to-encrypt/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 18:12:47 GMT -->
+</html>
